@@ -94,8 +94,6 @@ function onGalleryItemClick(event) {
     
     if (event.target.classList.contains('gallery-image')) {
         
-        console.log(event.target.dataset.source);
-        
         const instance = basicLightbox.create(`
             <img src="${event.target.dataset.source}" 
             alt="${event.target.alt}"
